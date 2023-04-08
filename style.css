@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600;6..96,700;6..96,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Bodoni Moda", serif;
+  font-family: "Nunito", sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(226, 43%, 10%);
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "zero one two three" "zero four five six";
+  gap: 15px;
+}
+.side-bar {
+  background-color: hsl(235, 46%, 20%);
+  width: 160px;
+  height: 327px;
+  border-radius: 15px;
+  grid-area: zero;
+}
+.profile {
+  background-color: hsl(246, 80%, 60%);
+  height: 220px;
+  border-radius: 15px;
+}
+.profile img {
+  border: 2px solid white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  margin: 20px;
+  margin-top: 22px;
+}
+.profile p,
+h1 {
+  margin-left: 20px;
+}
+.profile p {
+  color: hsl(236, 100%, 87%);
+  margin-left: 22px;
+  padding-top: 7px;
+  font-size: x-small;
+}
+.profile h1 {
+  color: white;
+  font-weight: normal;
+  font-size: xx-large;
+}
+.period {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.period p {
+  padding-top: 12px;
+  color: hsl(236, 100%, 87%);
+  font-size: 12px;
+  font-weight: bolder;
+}
+.period span {
+  color: white;
+  padding-top: 12px;
+  font-size: 12px;
+  font-weight: bolder;
+}
+.container1 {
+  grid-area: one;
+  background-color: hsl(15, 100%, 70%);
+  width: 160px;
+  height: 155px;
+  border-radius: 13px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(
+    hsl(15, 100%, 70%),
+    hsl(15, 100%, 70%),
+    hsl(235, 46%, 20%)
+  );
+}
+.container1 img {
+  height: 40px;
+  width: 40px;
+  margin-left: 7.5rem;
+  margin-top: -0.3rem;
+  overflow: hidden;
+}
+.box1,
+.box2,
+.box3 {
+  background-color: hsl(235, 46%, 20%);
+  height: 128px;
+  border-radius: 11px;
+  width: 160px;
+  margin-top: 1.895rem;
+  position: absolute;
+}
+.head1 {
+  display: flex;
+  margin-top: 1rem;
+}
+.head1,
+h3 {
+  color: white;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 18px;
+}
+.head1 img {
+  height: 5px;
+  width: 14px;
+  margin-top: 19px;
+  margin-left: 5rem;
+}
+.row1 {
+  margin-left: 17px;
+  margin-top: 8px;
+}
+.row1 p {
+  font-size: 35px;
+  font-weight: lighter;
+  color: white;
+}
+.row1 span {
+  color: hsl(236, 100%, 87%);
+  font-weight: lighter;
+  margin-top: 1.5rem;
+  font-size: x-small;
+}
+.container2 {
+  grid-area: two;
+  background-color: hsl(195, 74%, 62%);
+  width: 160px;
+  height: 155px;
+  border-radius: 13px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(
+    hsl(195, 74%, 62%),
+    hsl(195, 74%, 62%),
+    hsl(235, 46%, 20%)
+  );
+}
+.container2 img {
+  height: 40px;
+  width: 40px;
+  margin-left: 7.5rem;
+  margin-top: -0.3rem;
+  overflow: hidden;
+}
+
+.head2 {
+  display: flex;
+}
+.head2 h3 {
+  color: white;
+  margin-top: 1.7rem;
+  margin-left: 1.5rem;
+  font-size: 18px;
+}
+.head2 img {
+  height: 5px;
+  width: 14px;
+  margin-top: 2.4rem;
+  margin-left: 5rem;
+}
+
+.row2 {
+  margin-left: 17px;
+  margin-top: 8px;
+}
+.row2 p {
+  font-size: 35px;
+  font-weight: lighter;
+  color: white;
+}
+.row2 span {
+  color: hsl(236, 100%, 87%);
+  font-weight: lighter;
+  margin-top: 5px;
+  font-size: x-small;
+}
+.container3 {
+  grid-area: three;
+  background-color: hsl(348, 100%, 68%);
+  width: 160px;
+  height: 155px;
+  border-radius: 13px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(
+    hsl(348, 100%, 68%),
+    hsl(348, 100%, 68%),
+    hsl(235, 46%, 20%)
+  );
+}
+.container3 img {
+  height: 40px;
+  width: 40px;
+  margin-left: 7.5rem;
+  margin-top: -0.3rem;
+  overflow: hidden;
+}
+.head5 {
+  display: flex;
+}
+.head5 h3 {
+  color: white;
+  margin-top: 1.7rem;
+  margin-left: 1.5rem;
+  font-size: 18px;
+}
+.head5 img {
+  height: 5px;
+  width: 14px;
+  margin-top: 1.8rem;
+  margin-left: 5rem;
+}
+.row3 {
+  margin-left: 17px;
+  margin-top: 8px;
+}
+.row3 p {
+  font-size: 35px;
+  font-weight: lighter;
+  color: white;
+}
+.row3 span {
+  color: hsl(236, 100%, 87%);
+  font-weight: lighter;
+  margin-top: 5px;
+  font-size: x-small;
+}
+.container4 {
+  grid-area: four;
+  background-color: hsl(145, 58%, 55%);
+  width: 160px;
+  height: 155px;
+  border-radius: 13px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(
+    hsl(145, 58%, 55%),
+    hsl(145, 58%, 55%),
+    hsl(235, 46%, 20%)
+  );
+}
+.container4 img {
+  height: 40px;
+  width: 40px;
+  margin-left: 7.5rem;
+  margin-top: -0.3rem;
+  overflow: hidden;
+}
+.head3 {
+  display: flex;
+}
+.head3 h3 {
+  color: white;
+  margin-top: 1.7rem;
+  margin-left: 1.2rem;
+  font-size: 18px;
+}
+.head3 img {
+  height: 5px;
+  width: 14px;
+  margin-top: 2.3rem;
+  margin-left: 2.8rem;
+}
+.container5 {
+  grid-area: five;
+  background-color: hsl(264, 64%, 52%);
+  width: 160px;
+  height: 155px;
+  border-radius: 13px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(
+    hsl(264, 64%, 52%),
+    hsl(264, 64%, 52%),
+    hsl(235, 46%, 20%)
+  );
+}
+.container5 img {
+  height: 40px;
+  width: 40px;
+  margin-left: 7.5rem;
+  margin-top: -0.3rem;
+  overflow: hidden;
+}
+.head5 {
+  display: flex;
+}
+.head5 h3 {
+  color: white;
+  margin-top: 1.7rem;
+  margin-left: 1.2rem;
+  font-size: 18px;
+}
+.head5 img {
+  height: 5px;
+  width: 14px;
+  margin-top: 2.2rem;
+  margin-left: 4.6rem;
+}
+
+.container6 {
+  grid-area: six;
+  background-color: hsl(43, 84%, 65%);
+  width: 160px;
+  height: 155px;
+  border-radius: 13px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(
+    hsl(43, 84%, 65%),
+    hsl(43, 84%, 65%),
+    hsl(235, 46%, 20%)
+  );
+}
+.container6 img {
+  height: 40px;
+  width: 40px;
+  margin-left: 7.5rem;
+  margin-top: -0.3rem;
+  overflow: hidden;
+}
+.head6 {
+  display: flex;
+}
+.head6 h3 {
+  color: white;
+  margin-top: 1.7rem;
+  margin-left: 1.2rem;
+  font-size: 18px;
+}
+.head6 img {
+  height: 5px;
+  width: 14px;
+  margin-top: 2.2rem;
+  margin-left: 2.5rem;
+}
